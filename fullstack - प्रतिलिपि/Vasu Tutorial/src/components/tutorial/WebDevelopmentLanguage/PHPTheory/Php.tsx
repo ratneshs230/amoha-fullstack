@@ -25,7 +25,11 @@ const topicComponents: { [key: string]: React.FC } = {
      
 };
 
-const MainApplication: React.FC = () => {
+interface MainApplicationProps {
+  darkMode?: boolean;
+}
+
+const MainApplication: React.FC<MainApplicationProps> = ({ darkMode }) => {
   // Initialize 'selected' with the first sidebar item's component key
   const [selectedTopic, setSelectedTopic] = useState<string>(
     sidebarItems[0]?.component || 'Overview'
