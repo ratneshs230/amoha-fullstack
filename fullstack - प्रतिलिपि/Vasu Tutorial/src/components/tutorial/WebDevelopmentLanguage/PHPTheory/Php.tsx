@@ -29,7 +29,7 @@ interface MainApplicationProps {
   darkMode?: boolean;
 }
 
-const MainApplication: React.FC<MainApplicationProps> = ({ darkMode }) => {
+const MainApplication: React.FC<MainApplicationProps> = ({ darkMode: _darkMode }) => {
   // Initialize 'selected' with the first sidebar item's component key
   const [selectedTopic, setSelectedTopic] = useState<string>(
     sidebarItems[0]?.component || 'Overview'
