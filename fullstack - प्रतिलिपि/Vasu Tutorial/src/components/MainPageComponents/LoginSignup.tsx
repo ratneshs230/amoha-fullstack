@@ -94,11 +94,11 @@ const LoginSignup: React.FC<LoginSignupProps> = ({ onClose, onLoginSuccess }) =>
   };
 
   const handleGoogleLogin = () => {
-    window.location.href = "http://127.0.0.1:8000/auth/login/google";
+    window.location.href = "https://amoha-fullstack-production.up.railway.app/auth/login/google";
   };
 
   const handleFacebookLogin = () => {
-    window.location.href = "http://127.0.0.1:8000/auth/login/facebook";
+    window.location.href = "https://amoha-fullstack-production.up.railway.app/auth/login/facebook";
   };
 
   return (
