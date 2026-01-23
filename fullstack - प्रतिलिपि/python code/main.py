@@ -611,6 +611,7 @@ app.add_middleware(
         "http://127.0.0.1:3000",
         "http://localhost:8000",
         "http://127.0.0.1:8000",
+        "https://ample-determination-production-08d6.up.railway.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
