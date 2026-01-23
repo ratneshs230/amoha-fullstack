@@ -2,6 +2,7 @@ fastapi
 uvicorn[standard]
 SQLAlchemy
 psycopg2-binary
+pymysql
 python-dotenv
 passlib[bcrypt]
 python-jose[cryptography]
@@ -10,3 +11,5 @@ requests
 email-validator
 python-multipart
 pydantic
+itsdangerous
+httpx
