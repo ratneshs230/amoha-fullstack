@@ -2,8 +2,8 @@ import React from "react";
 
 const PhpStaticPropertiesTutorial: React.FC = () => {
   return (
-    <div className="p-6 max-w-3xl mx-auto text-gray-900">
-      <h1 className="text-3xl font-bold mb-4">PHP OOP - Static Properties</h1>
+    <div className="p-6 max-w-3xl mx-auto text-gray-800 dark:text-gray-200">
+      <h1 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">PHP OOP - Static Properties</h1>
 
       <p className="mb-4">
         Static properties are variables that can be accessed{" "}
@@ -11,9 +11,9 @@ const PhpStaticPropertiesTutorial: React.FC = () => {
         itself rather than an instance.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-4 mb-2">Static Property Syntax</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Static Property Syntax</h2>
 
-      <pre className="bg-gray-100 p-4 rounded mb-4 overflow-x-auto">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<?php
 class ClassName {
   public static $staticProp = "W3Schools";
@@ -23,13 +23,13 @@ class ClassName {
 
       <p className="mb-4">Accessing a static property:</p>
 
-      <pre className="bg-gray-100 p-4 rounded mb-4 overflow-x-auto">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`ClassName::$staticProp;`}
       </pre>
 
-      <h2 className="text-2xl font-semibold mt-4 mb-2">Example 1: Basic Static Property</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Example 1: Basic Static Property</h2>
 
-      <pre className="bg-gray-100 p-4 rounded mb-4 overflow-x-auto">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<?php
 class pi {
   public static $value = 3.14159;
@@ -44,11 +44,11 @@ echo pi::$value;
         creating an object.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-4 mb-2">
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">
         Example 2: Access Static Property Inside Same Class
       </h2>
 
-      <pre className="bg-gray-100 p-4 rounded mb-4 overflow-x-auto">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<?php
 class pi {
   public static $value = 3.14159;
@@ -68,11 +68,11 @@ echo $pi->staticValue();
         <code>self::$propertyName</code>.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-4 mb-2">
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">
         Example 3: Accessing Parent Static Property in Child Class
       </h2>
 
-      <pre className="bg-gray-100 p-4 rounded mb-4 overflow-x-auto">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<?php
 class pi {
   public static $value = 3.14159;
@@ -96,7 +96,7 @@ echo $x->xStatic();
         <code>parent::$propertyName</code>.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-4 mb-2">Why Use Static Properties?</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Why Use Static Properties?</h2>
 
       <ul className="list-disc pl-6 space-y-2">
         <li>Used for values shared across all objects</li>

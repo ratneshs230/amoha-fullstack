@@ -1,120 +1,133 @@
 import React from "react";
 
-const PHPOperators: React.FC = () => {
+const PHPComments: React.FC = () => {
   return (
-    <div className="p-6 leading-7">
-      <h1 className="text-3xl font-bold mb-4">PHP Operators</h1>
+    <div className="p-6 leading-7 text-gray-800 dark:text-gray-200">
+      <h1 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">PHP Comments</h1>
 
-      <p>
-        Operators are used to perform actions on variables and values. PHP
-        includes multiple categories of operators:
+      <p className="mt-2">
+        Comments in PHP are lines of code that are not executed as part of the program.
+        They are used to explain code and make it more readable. Comments can also be used
+        to prevent code from executing when testing.
       </p>
 
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Why Use Comments?</h2>
       <ul className="list-disc ml-6 mt-2">
-        <li>Arithmetic Operators</li>
-        <li>Assignment Operators</li>
-        <li>Comparison Operators</li>
-        <li>Increment / Decrement Operators</li>
-        <li>Logical Operators</li>
-        <li>String Operators</li>
-        <li>Array Operators</li>
-        <li>Conditional Assignment Operators</li>
+        <li>Let others understand your code</li>
+        <li>Remind yourself what the code does</li>
+        <li>Temporarily disable code during debugging</li>
+        <li>Document functions and their parameters</li>
       </ul>
 
-      {/* Arithmetic Operators */}
-      <h2 className="text-2xl font-semibold mt-6">PHP Arithmetic Operators</h2>
-      <p>Arithmetic operators perform basic mathematical operations.</p>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">PHP Supports Several Types of Comments</h2>
 
-      <pre className="bg-gray-200 p-3 rounded mt-2">
-{`+   Addition            $x + $y
--   Subtraction         $x - $y
-*   Multiplication      $x * $y
-/   Division            $x / $y
-%   Modulus             $x % $y
-**  Exponentiation      $x ** $y`}
+      <h3 className="text-xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Single-line Comments</h3>
+      <p className="mt-2">
+        Single-line comments start with <code className="bg-gray-200 dark:bg-gray-700 px-1 rounded">//</code> or <code className="bg-gray-200 dark:bg-gray-700 px-1 rounded">#</code>.
+        Everything after these symbols on the same line is ignored.
+      </p>
+
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
+        <code className="text-sm">{`<?php
+// This is a single-line comment
+
+# This is also a single-line comment
+
+echo "Hello World!"; // This comment is at the end of a line
+?>`}</code>
       </pre>
 
-      {/* Assignment Operators */}
-      <h2 className="text-2xl font-semibold mt-6">PHP Assignment Operators</h2>
-      <p>The assignment operator sets a variable's value. Short forms include:</p>
+      <h3 className="text-xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Multi-line Comments</h3>
+      <p className="mt-2">
+        Multi-line comments start with <code className="bg-gray-200 dark:bg-gray-700 px-1 rounded">/*</code> and end with <code className="bg-gray-200 dark:bg-gray-700 px-1 rounded">*/</code>.
+        Everything between these markers is ignored.
+      </p>
 
-      <pre className="bg-gray-200 p-3 rounded mt-2">
-{`x = y     // Assign y to x
-x += y    // x = x + y
-x -= y    // x = x - y
-x *= y    // x = x * y
-x /= y    // x = x / y
-x %= y    // x = x % y`}
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
+        <code className="text-sm">{`<?php
+/*
+This is a multi-line comment.
+It can span multiple lines.
+Very useful for longer explanations.
+*/
+
+echo "Hello World!";
+?>`}</code>
       </pre>
 
-      {/* Comparison Operators */}
-      <h2 className="text-2xl font-semibold mt-6">PHP Comparison Operators</h2>
-      <p>Used to compare two values.</p>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Using Comments to Disable Code</h2>
+      <p className="mt-2">
+        Comments can be used to prevent code from executing, which is helpful during debugging.
+      </p>
 
-      <pre className="bg-gray-200 p-3 rounded mt-2">
-{`==   Equal
-===  Identical (same value & type)
-!=   Not equal
-<>   Not equal
-!==  Not identical
->    Greater than
-<    Less than
->=   Greater than or equal
-<=   Less than or equal
-<=>  Spaceship operator`}
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
+        <code className="text-sm">{`<?php
+// echo "This line will NOT execute";
+
+echo "This line will execute";
+
+/*
+echo "This entire block";
+echo "will not execute";
+echo "useful for testing";
+*/
+?>`}</code>
       </pre>
 
-      {/* Increment / Decrement */}
-      <h2 className="text-2xl font-semibold mt-6">PHP Increment / Decrement Operators</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Comments in HTML and PHP</h2>
+      <p className="mt-2">
+        PHP comments are different from HTML comments. PHP comments are not visible in the browser's source code.
+      </p>
 
-      <pre className="bg-gray-200 p-3 rounded mt-2">
-{`++$x   Pre-increment
-$x++   Post-increment
---$x   Pre-decrement
-$x--   Post-decrement`}
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
+        <code className="text-sm">{`<!DOCTYPE html>
+<html>
+<body>
+
+<!-- This is an HTML comment (visible in page source) -->
+
+<?php
+// This is a PHP comment (NOT visible in page source)
+echo "Hello World!";
+?>
+
+</body>
+</html>`}</code>
       </pre>
 
-      {/* Logical Operators */}
-      <h2 className="text-2xl font-semibold mt-6">PHP Logical Operators</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Documentation Comments (PHPDoc)</h2>
+      <p className="mt-2">
+        PHPDoc comments are special multi-line comments used to document functions, classes, and methods.
+        They start with <code className="bg-gray-200 dark:bg-gray-700 px-1 rounded">/**</code> and include special tags.
+      </p>
 
-      <pre className="bg-gray-200 p-3 rounded mt-2">
-{`and   True if both conditions are true
-or    True if any condition is true
-xor   True if only one condition is true
-&&    Logical AND
-||    Logical OR
-!     Logical NOT`}
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
+        <code className="text-sm">{`<?php
+/**
+ * Calculate the sum of two numbers
+ *
+ * @param int $a First number
+ * @param int $b Second number
+ * @return int The sum of the two numbers
+ */
+function add($a, $b) {
+    return $a + $b;
+}
+
+echo add(5, 3);  // Output: 8
+?>`}</code>
       </pre>
 
-      {/* String Operators */}
-      <h2 className="text-2xl font-semibold mt-6">PHP String Operators</h2>
-
-      <pre className="bg-gray-200 p-3 rounded mt-2">
-{`.    Concatenation
-.=   Concatenation assignment`}
-      </pre>
-
-      {/* Array Operators */}
-      <h2 className="text-2xl font-semibold mt-6">PHP Array Operators</h2>
-
-      <pre className="bg-gray-200 p-3 rounded mt-2">
-{`+     Union of arrays
-==    Equal (same key/value pairs)
-===   Identical (same key/value, type, and order)
-!=    Not equal
-<>    Not equal
-!==   Not identical`}
-      </pre>
-
-      {/* Conditional Operators */}
-      <h2 className="text-2xl font-semibold mt-6">PHP Conditional Assignment Operators</h2>
-
-      <pre className="bg-gray-200 p-3 rounded mt-2">
-{`?:   Ternary operator
-??   Null coalescing operator`}
-      </pre>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Best Practices for Comments</h2>
+      <ul className="list-disc ml-6 mt-2">
+        <li>Write comments that explain "why" not just "what"</li>
+        <li>Keep comments up to date when code changes</li>
+        <li>Use meaningful variable names to reduce the need for comments</li>
+        <li>Avoid obvious comments like "increment i by 1"</li>
+        <li>Use PHPDoc for functions and classes in larger projects</li>
+      </ul>
     </div>
   );
 };
 
-export default PHPOperators;
+export default PHPComments;

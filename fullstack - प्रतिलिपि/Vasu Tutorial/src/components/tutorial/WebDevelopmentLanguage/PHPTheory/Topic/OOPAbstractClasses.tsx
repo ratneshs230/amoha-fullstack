@@ -2,17 +2,17 @@ import React from "react";
 
 const PHPOOPAbstractClasses: React.FC = () => {
   return (
-    <div className="p-6 leading-7">
-      <h1 className="text-3xl font-bold mb-4">PHP OOP - Abstract Classes</h1>
+    <div className="p-6 leading-7 text-gray-800 dark:text-gray-200">
+      <h1 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">PHP OOP - Abstract Classes</h1>
 
-      <h2 className="text-2xl font-semibold mt-6">What are Abstract Classes and Methods?</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">What are Abstract Classes and Methods?</h2>
       <p>
         Abstract classes contain at least one abstract method. An abstract method is declared but not implemented, 
         leaving the child classes to define it. Abstract classes are defined using the <code>abstract</code> keyword.
       </p>
 
-      <h3 className="text-xl font-semibold mt-4">Syntax:</h3>
-      <pre className="bg-gray-100 p-4 rounded-md overflow-x-auto">
+      <h3 className="text-xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Syntax:</h3>
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
         {`<?php
 abstract class ParentClass {
   abstract public function someMethod1();
@@ -22,15 +22,15 @@ abstract class ParentClass {
 ?>`}
       </pre>
 
-      <h3 className="text-xl font-semibold mt-4">Rules for Child Classes</h3>
+      <h3 className="text-xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Rules for Child Classes</h3>
       <ul className="list-disc pl-6">
         <li>Child method must have the same name as the parent abstract method.</li>
         <li>Access modifier must be same or less restricted.</li>
         <li>Number of required arguments must match, optional arguments may be added.</li>
       </ul>
 
-      <h3 className="text-xl font-semibold mt-4">Example:</h3>
-      <pre className="bg-gray-100 p-4 rounded-md overflow-x-auto">
+      <h3 className="text-xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Example:</h3>
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
         {`<?php
 abstract class Car {
   public $name;
@@ -57,8 +57,8 @@ echo $audi->intro();
 ?>`}
       </pre>
 
-      <h3 className="text-xl font-semibold mt-4">Abstract Method with Arguments:</h3>
-      <pre className="bg-gray-100 p-4 rounded-md overflow-x-auto">
+      <h3 className="text-xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Abstract Method with Arguments:</h3>
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
         {`<?php
 abstract class ParentClass {
   abstract protected function prefixName($name);

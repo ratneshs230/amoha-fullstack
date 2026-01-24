@@ -2,8 +2,8 @@ import React from "react";
 
 const PHPIncludeFiles: React.FC = () => {
   return (
-    <div className="p-6 leading-7">
-      <h1 className="text-3xl font-bold mb-4">PHP Include Files</h1>
+    <div className="p-6 leading-7 text-gray-800 dark:text-gray-200">
+      <h1 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">PHP Include Files</h1>
 
       <p>
         The <code>include</code> (or <code>require</code>) statement takes all the text/code/markup 
@@ -11,7 +11,7 @@ const PHPIncludeFiles: React.FC = () => {
         Including files is useful for reusing PHP, HTML, or text across multiple pages.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-6">include vs require</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">include vs require</h2>
       <ul className="list-disc ml-6 mt-2">
         <li>
           <strong>require</strong> - Produces a fatal error (E_COMPILE_ERROR) if the file is missing, stopping the script.
@@ -26,22 +26,22 @@ const PHPIncludeFiles: React.FC = () => {
         Update the include file, and all pages will automatically reflect the change.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-6">Syntax</h2>
-      <pre className="bg-gray-200 p-3 rounded mt-2">
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Syntax</h2>
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`include 'filename';
 require 'filename';`}
       </pre>
 
-      <h2 className="text-2xl font-semibold mt-6">Examples</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Examples</h2>
 
-      <h3 className="text-xl font-semibold mt-4">Example 1: Footer File</h3>
-      <pre className="bg-gray-200 p-3 rounded mt-2">
+      <h3 className="text-xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Example 1: Footer File</h3>
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<?php
 echo "<p>Copyright &copy; 1999-" . date("Y") . " W3Schools.com</p>";
 ?>`}
       </pre>
       <p>Include it in a page:</p>
-      <pre className="bg-gray-200 p-3 rounded mt-2">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<html>
 <body>
 
@@ -54,8 +54,8 @@ echo "<p>Copyright &copy; 1999-" . date("Y") . " W3Schools.com</p>";
 </html>`}
       </pre>
 
-      <h3 className="text-xl font-semibold mt-4">Example 2: Menu File</h3>
-      <pre className="bg-gray-200 p-3 rounded mt-2">
+      <h3 className="text-xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Example 2: Menu File</h3>
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<?php
 echo '<a href="/default.asp">Home</a> -
 <a href="/html/default.asp">HTML Tutorial</a> -
@@ -65,7 +65,7 @@ echo '<a href="/default.asp">Home</a> -
 ?>`}
       </pre>
       <p>Include it in a page inside a div:</p>
-      <pre className="bg-gray-200 p-3 rounded mt-2">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<html>
 <body>
 
@@ -81,15 +81,15 @@ echo '<a href="/default.asp">Home</a> -
 </html>`}
       </pre>
 
-      <h3 className="text-xl font-semibold mt-4">Example 3: Variables File</h3>
-      <pre className="bg-gray-200 p-3 rounded mt-2">
+      <h3 className="text-xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Example 3: Variables File</h3>
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<?php
 $color = 'red';
 $car = 'BMW';
 ?>`}
       </pre>
       <p>Include it in a page and use variables:</p>
-      <pre className="bg-gray-200 p-3 rounded mt-2">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<html>
 <body>
 
@@ -103,9 +103,9 @@ echo "I have a $color $car.";
 </html>`}
       </pre>
 
-      <h3 className="text-xl font-semibold mt-4">Include vs Require Example</h3>
+      <h3 className="text-xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Include vs Require Example</h3>
       <p>Using <code>include</code> when file doesn't exist:</p>
-      <pre className="bg-gray-200 p-3 rounded mt-2">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<html>
 <body>
 
@@ -119,7 +119,7 @@ echo "I have a $color $car.";
       </pre>
 
       <p>Using <code>require</code> when file doesn't exist (script stops):</p>
-      <pre className="bg-gray-200 p-3 rounded mt-2">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<html>
 <body>
 

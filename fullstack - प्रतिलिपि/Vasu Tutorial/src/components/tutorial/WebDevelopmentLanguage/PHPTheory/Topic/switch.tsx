@@ -2,16 +2,16 @@ import React from "react";
 
 const PhpSwitchStatement: React.FC = () => {
   return (
-    <div className="p-4 space-y-6">
-      <h1 className="text-3xl font-bold">PHP Switch Statement</h1>
+    <div className="p-6 leading-7 text-gray-800 dark:text-gray-200">
+      <h1 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">PHP Switch Statement</h1>
 
       <p>
         The <strong>PHP switch statement</strong> is used to perform different
         actions based on different conditions.
       </p>
 
-      <h2 className="text-2xl font-semibold">Syntax</h2>
-      <pre className="bg-gray-100 p-4 rounded-md overflow-auto">
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Syntax</h2>
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`switch (expression) {
   case label1:
     //code block
@@ -36,8 +36,8 @@ const PhpSwitchStatement: React.FC = () => {
         <li><code>default</code> runs if no match</li>
       </ul>
 
-      <h2 className="text-2xl font-semibold">Example</h2>
-      <pre className="bg-gray-100 p-4 rounded-md overflow-auto">
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Example</h2>
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`$favcolor = "red";
 
 switch ($favcolor) {
@@ -55,15 +55,15 @@ switch ($favcolor) {
 }`}
       </pre>
 
-      <h2 className="text-2xl font-semibold">The <code>break</code> Keyword</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">The <code>break</code> Keyword</h2>
       <p>
         When PHP reaches a <code>break</code>, the switch block ends. If you
         forget the <code>break</code> in a case, PHP will continue to the next
         case (this is called <strong>fall-through</strong>).
       </p>
 
-      <h3 className="text-xl font-semibold">Example Without Break</h3>
-      <pre className="bg-gray-100 p-4 rounded-md overflow-auto">
+      <h3 className="text-xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Example Without Break</h3>
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`$favcolor = "red";
 
 switch ($favcolor) {
@@ -80,13 +80,13 @@ switch ($favcolor) {
 }`}
       </pre>
 
-      <h2 className="text-2xl font-semibold">The <code>default</code> Case</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">The <code>default</code> Case</h2>
       <p>
         The <code>default</code> block runs when no other case matches. It can
         be placed anywhere (but should be last).
       </p>
 
-      <pre className="bg-gray-100 p-4 rounded-md overflow-auto">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`$d = 4;
 
 switch ($d) {
@@ -101,8 +101,8 @@ switch ($d) {
 }`}
       </pre>
 
-      <h3 className="text-xl font-semibold">Default Not at the End</h3>
-      <pre className="bg-gray-100 p-4 rounded-md overflow-auto">
+      <h3 className="text-xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Default Not at the End</h3>
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`$d = 4;
 
 switch ($d) {
@@ -117,10 +117,10 @@ switch ($d) {
 }`}
       </pre>
 
-      <h2 className="text-2xl font-semibold">Multiple Cases Using Same Code</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Multiple Cases Using Same Code</h2>
       <p>You can use multiple cases for the same output:</p>
 
-      <pre className="bg-gray-100 p-4 rounded-md overflow-auto">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`$d = 3;
 
 switch ($d) {

@@ -2,19 +2,19 @@ import React from "react";
 
 const PhpConstants: React.FC = () => {
   return (
-    <div className="p-4 space-y-4">
-      <h1 className="text-2xl font-bold">PHP Constants</h1>
+    <div className="p-6 leading-7 text-gray-800 dark:text-gray-200">
+      <h1 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">PHP Constants</h1>
 
       <p>
         A constant is an identifier (name) for a simple value. Unlike variables, constants cannot be changed or undefined once they are defined.
       </p>
 
-      <h2 className="text-xl font-semibold">Creating Constants</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Creating Constants</h2>
       <p>
         To create a constant, use the <code>define()</code> function:
       </p>
 
-      <pre className="bg-gray-200 p-3 rounded">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`define(name, value, case-insensitive)`}
       </pre>
 
@@ -26,7 +26,7 @@ const PhpConstants: React.FC = () => {
       </ul>
 
       <h2 className="text-xl font-semibold mt-4">Example: Case-Sensitive Constant</h2>
-      <pre className="bg-gray-200 p-3 rounded">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<?php
 define("GREETING", "Welcome to W3Schools.com!");
 echo GREETING;
@@ -34,7 +34,7 @@ echo GREETING;
       </pre>
 
       <h2 className="text-xl font-semibold mt-4">Example: Case-Insensitive Constant (Deprecated in PHP 7.3+)</h2>
-      <pre className="bg-gray-200 p-3 rounded">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<?php
 define("GREETING", "Welcome!", true);
 echo greeting;  // Works in older PHP versions
@@ -49,7 +49,7 @@ echo greeting;  // Works in older PHP versions
         You can also create constants using the <code>const</code> keyword:
       </p>
 
-      <pre className="bg-gray-200 p-3 rounded">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<?php
 const SITE_NAME = "W3Schools";
 echo SITE_NAME;
@@ -57,25 +57,25 @@ echo SITE_NAME;
       </pre>
 
       <h2 className="text-xl font-semibold mt-4">const vs define()</h2>
-      <table className="min-w-full border border-gray-300 mt-2">
+      <table className="min-w-full border border-gray-300 dark:border-gray-600 mt-4">
         <thead>
-          <tr className="bg-gray-100">
-            <th className="border border-gray-300 px-4 py-2">const</th>
-            <th className="border border-gray-300 px-4 py-2">define()</th>
+          <tr className="bg-gray-100 dark:bg-gray-700">
+            <th className="border border-gray-300 dark:border-gray-600 px-4 py-2">const</th>
+            <th className="border border-gray-300 dark:border-gray-600 px-4 py-2">define()</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td className="border border-gray-300 px-4 py-2">Defined at compile time</td>
-            <td className="border border-gray-300 px-4 py-2">Defined at runtime</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Defined at compile time</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Defined at runtime</td>
           </tr>
           <tr>
-            <td className="border border-gray-300 px-4 py-2">Cannot be used in conditional statements</td>
-            <td className="border border-gray-300 px-4 py-2">Can be used in conditional statements</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Cannot be used in conditional statements</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Can be used in conditional statements</td>
           </tr>
           <tr>
-            <td className="border border-gray-300 px-4 py-2">Always case-sensitive</td>
-            <td className="border border-gray-300 px-4 py-2">Can be case-insensitive (deprecated)</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Always case-sensitive</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Can be case-insensitive (deprecated)</td>
           </tr>
         </tbody>
       </table>
@@ -85,7 +85,7 @@ echo SITE_NAME;
         In PHP 7+, you can create constant arrays using <code>define()</code>:
       </p>
 
-      <pre className="bg-gray-200 p-3 rounded">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<?php
 define("CARS", [
     "Alfa Romeo",
@@ -101,7 +101,7 @@ echo CARS[0];  // Outputs: Alfa Romeo
         Constants are automatically global and can be accessed throughout the entire script:
       </p>
 
-      <pre className="bg-gray-200 p-3 rounded">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<?php
 define("GREETING", "Welcome to PHP!");
 
@@ -118,55 +118,55 @@ myTest();
         PHP has many predefined constants (also called "magic constants"):
       </p>
 
-      <table className="min-w-full border border-gray-300 mt-2">
+      <table className="min-w-full border border-gray-300 dark:border-gray-600 mt-4">
         <thead>
-          <tr className="bg-gray-100">
-            <th className="border border-gray-300 px-4 py-2">Constant</th>
-            <th className="border border-gray-300 px-4 py-2">Description</th>
+          <tr className="bg-gray-100 dark:bg-gray-700">
+            <th className="border border-gray-300 dark:border-gray-600 px-4 py-2">Constant</th>
+            <th className="border border-gray-300 dark:border-gray-600 px-4 py-2">Description</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td className="border border-gray-300 px-4 py-2">__LINE__</td>
-            <td className="border border-gray-300 px-4 py-2">Current line number</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">__LINE__</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Current line number</td>
           </tr>
           <tr>
-            <td className="border border-gray-300 px-4 py-2">__FILE__</td>
-            <td className="border border-gray-300 px-4 py-2">Full path and filename</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">__FILE__</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Full path and filename</td>
           </tr>
           <tr>
-            <td className="border border-gray-300 px-4 py-2">__DIR__</td>
-            <td className="border border-gray-300 px-4 py-2">Directory of the file</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">__DIR__</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Directory of the file</td>
           </tr>
           <tr>
-            <td className="border border-gray-300 px-4 py-2">__FUNCTION__</td>
-            <td className="border border-gray-300 px-4 py-2">Function name</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">__FUNCTION__</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Function name</td>
           </tr>
           <tr>
-            <td className="border border-gray-300 px-4 py-2">__CLASS__</td>
-            <td className="border border-gray-300 px-4 py-2">Class name</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">__CLASS__</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Class name</td>
           </tr>
           <tr>
-            <td className="border border-gray-300 px-4 py-2">__METHOD__</td>
-            <td className="border border-gray-300 px-4 py-2">Class method name</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">__METHOD__</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Class method name</td>
           </tr>
           <tr>
-            <td className="border border-gray-300 px-4 py-2">__NAMESPACE__</td>
-            <td className="border border-gray-300 px-4 py-2">Current namespace</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">__NAMESPACE__</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Current namespace</td>
           </tr>
           <tr>
-            <td className="border border-gray-300 px-4 py-2">PHP_VERSION</td>
-            <td className="border border-gray-300 px-4 py-2">PHP version</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">PHP_VERSION</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">PHP version</td>
           </tr>
           <tr>
-            <td className="border border-gray-300 px-4 py-2">PHP_OS</td>
-            <td className="border border-gray-300 px-4 py-2">Operating system</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">PHP_OS</td>
+            <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Operating system</td>
           </tr>
         </tbody>
       </table>
 
       <h2 className="text-xl font-semibold mt-4">Example: Using Magic Constants</h2>
-      <pre className="bg-gray-200 p-3 rounded">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<?php
 echo "Current line: " . __LINE__ . "<br>";
 echo "File: " . __FILE__ . "<br>";
@@ -180,7 +180,7 @@ echo "PHP Version: " . PHP_VERSION;
         Use <code>defined()</code> to check if a constant is defined:
       </p>
 
-      <pre className="bg-gray-200 p-3 rounded">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<?php
 define("GREETING", "Hello!");
 

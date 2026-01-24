@@ -2,8 +2,8 @@ import React from "react";
 
 const PhpTraitsTutorial: React.FC = () => {
   return (
-    <div className="p-6 max-w-3xl mx-auto text-gray-900">
-      <h1 className="text-3xl font-bold mb-4">PHP OOP - Traits</h1>
+    <div className="p-6 max-w-3xl mx-auto text-gray-800 dark:text-gray-200">
+      <h1 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">PHP OOP - Traits</h1>
 
       <p className="mb-4">
         PHP supports only single inheritance, which means a class can inherit
@@ -11,15 +11,15 @@ const PhpTraitsTutorial: React.FC = () => {
         <strong> PHP Traits </strong> solve this problem.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-4 mb-2">What are Traits?</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">What are Traits?</h2>
       <p className="mb-4">
         Traits allow you to create reusable methods that can be used in multiple
         classes. They help avoid code duplication.
       </p>
 
-      <h3 className="text-xl font-semibold mb-2">Trait Syntax</h3>
+      <h3 className="text-xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Trait Syntax</h3>
 
-      <pre className="bg-gray-100 p-4 rounded mb-4 overflow-x-auto">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<?php
 trait TraitName {
   // some reusable code...
@@ -27,8 +27,8 @@ trait TraitName {
 ?>`}
       </pre>
 
-      <h3 className="text-xl font-semibold mb-2">Using Traits in a Class</h3>
-      <pre className="bg-gray-100 p-4 rounded mb-4 overflow-x-auto">
+      <h3 className="text-xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Using Traits in a Class</h3>
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<?php
 class MyClass {
   use TraitName;
@@ -36,9 +36,9 @@ class MyClass {
 ?>`}
       </pre>
 
-      <h2 className="text-2xl font-semibold mt-4 mb-2">Example 1: Basic Trait</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Example 1: Basic Trait</h2>
 
-      <pre className="bg-gray-100 p-4 rounded mb-4 overflow-x-auto">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<?php
 trait message1 {
   public function msg1() {
@@ -60,11 +60,11 @@ $obj->msg1();
         trait, so it gets access to the <code>msg1()</code> method.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-4 mb-2">
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">
         Example 2: Using Multiple Traits
       </h2>
 
-      <pre className="bg-gray-100 p-4 rounded mb-4 overflow-x-auto">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<?php
 trait message1 {
   public function msg1() {
@@ -102,7 +102,7 @@ $obj2->msg2();
         simulate multiple inheritance.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-4 mb-2">
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">
         Why Use PHP Traits?
       </h2>
 

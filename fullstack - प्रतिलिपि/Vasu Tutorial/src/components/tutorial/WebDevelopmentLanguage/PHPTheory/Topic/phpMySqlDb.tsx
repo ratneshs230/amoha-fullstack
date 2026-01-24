@@ -1,10 +1,10 @@
 export default function PhpMySqlTutorial() {
   return (
-    <div className="p-6 max-w-3xl mx-auto space-y-6">
-      <h1 className="text-3xl font-bold">PHP + MySQL Tutorial</h1>
+    <div className="p-6 max-w-3xl mx-auto space-y-6 text-gray-800 dark:text-gray-200">
+      <h1 className="text-3xl font-bold text-gray-900 dark:text-white">PHP + MySQL Tutorial</h1>
 
       <section className="space-y-3">
-        <h2 className="text-xl font-semibold">1. What is MySQL?</h2>
+        <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100">1. What is MySQL?</h2>
         <p>
           MySQL is a fast, reliable, open-source database system widely used for
           web applications. It stores data in tables made of rows and columns.
@@ -18,7 +18,7 @@ export default function PhpMySqlTutorial() {
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-xl font-semibold">2. PHP + MySQL Overview</h2>
+        <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100">2. PHP + MySQL Overview</h2>
         <p>
           PHP is used to connect to a MySQL database, run SQL queries, and send
           results back to the browser.
@@ -26,16 +26,16 @@ export default function PhpMySqlTutorial() {
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-xl font-semibold">3. Basic SQL Query</h2>
-        <pre className="bg-gray-900 text-white p-4 rounded-xl overflow-auto text-sm">
+        <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100">3. Basic SQL Query</h2>
+        <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`SELECT LastName FROM Employees;`}
         </pre>
         <p>This query fetches all last names from the Employees table.</p>
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-xl font-semibold">4. PHP: Connect to MySQL</h2>
-        <pre className="bg-gray-900 text-white p-4 rounded-xl overflow-auto text-sm">
+        <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100">4. PHP: Connect to MySQL</h2>
+        <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<?php
 $servername = "localhost";
 $username = "root";
@@ -54,8 +54,8 @@ echo "Connected successfully";
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-xl font-semibold">5. PHP: Fetch Data From MySQL</h2>
-        <pre className="bg-gray-900 text-white p-4 rounded-xl overflow-auto text-sm">
+        <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100">5. PHP: Fetch Data From MySQL</h2>
+        <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<?php
 $sql = "SELECT id, firstname, lastname FROM Users";
 $result = $conn->query($sql);

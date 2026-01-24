@@ -1,7 +1,9 @@
-const PhpCasting = () => {
+import React from "react";
+
+const PhpCasting: React.FC = () => {
   return (
-    <div className="p-6 space-y-6">
-      <h1 className="text-3xl font-bold">PHP Casting</h1>
+    <div className="p-6 leading-7 text-gray-800 dark:text-gray-200">
+      <h1 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">PHP Casting</h1>
 
       <p>
         Sometimes you need to convert a variable from one data type to another.
@@ -22,9 +24,9 @@ const PhpCasting = () => {
       </ul>
 
       {/* STRING CASTING */}
-      <h2 className="text-2xl font-semibold">Cast to String</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Cast to String</h2>
       <p>Using (string) to convert into a string:</p>
-      <pre className="bg-gray-900 text-white p-4 rounded-lg">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`$a = 5;
 $b = 5.34;
 $c = "hello";
@@ -45,9 +47,9 @@ var_dump($e);`}
       </pre>
 
       {/* INTEGER CASTING */}
-      <h2 className="text-2xl font-semibold">Cast to Integer</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Cast to Integer</h2>
       <p>Using (int) to convert into an integer:</p>
-      <pre className="bg-gray-900 text-white p-4 rounded-lg">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`$a = 5;
 $b = 5.34;
 $c = "25 kilometers";
@@ -66,8 +68,8 @@ $g = (int) $g;`}
       </pre>
 
       {/* FLOAT CASTING */}
-      <h2 className="text-2xl font-semibold">Cast to Float</h2>
-      <pre className="bg-gray-900 text-white p-4 rounded-lg">
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Cast to Float</h2>
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`$a = 5;
 $b = 5.34;
 $c = "25 kilometers";
@@ -86,12 +88,12 @@ $g = (float) $g;`}
       </pre>
 
       {/* BOOLEAN CASTING */}
-      <h2 className="text-2xl font-semibold">Cast to Boolean</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Cast to Boolean</h2>
       <p>
         Using (bool) to convert into Boolean.  
         0, NULL, empty string, and false become false — rest become true.
       </p>
-      <pre className="bg-gray-900 text-white p-4 rounded-lg">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`$a = 5;
 $b = 5.34;
 $c = 0;
@@ -114,9 +116,9 @@ $i = (bool) $i;`}
       </pre>
 
       {/* ARRAY CASTING */}
-      <h2 className="text-2xl font-semibold">Cast to Array</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Cast to Array</h2>
       <p>Most values become a 1-item indexed array. NULL becomes an empty array.</p>
-      <pre className="bg-gray-900 text-white p-4 rounded-lg">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`$a = 5;
 $b = 5.34;
 $c = "hello";
@@ -130,8 +132,8 @@ $d = (array) $d;
 $e = (array) $e;`}
       </pre>
 
-      <h2 className="text-2xl font-semibold">Objects to Arrays</h2>
-      <pre className="bg-gray-900 text-white p-4 rounded-lg">
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Objects to Arrays</h2>
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`class Car {
   public $color;
   public $model;
@@ -149,9 +151,9 @@ var_dump($myCar);`}
       </pre>
 
       {/* OBJECT CASTING */}
-      <h2 className="text-2xl font-semibold">Cast to Object</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Cast to Object</h2>
       <p>Most values become an object with property "scalar".</p>
-      <pre className="bg-gray-900 text-white p-4 rounded-lg">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`$a = 5;
 $b = 5.34;
 $c = "hello";
@@ -165,8 +167,8 @@ $d = (object) $d;
 $e = (object) $e;`}
       </pre>
 
-      <h2 className="text-2xl font-semibold">Arrays to Objects</h2>
-      <pre className="bg-gray-900 text-white p-4 rounded-lg">
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Arrays to Objects</h2>
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`$a = array("Volvo", "BMW", "Toyota");
 $b = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
 
@@ -175,8 +177,8 @@ $b = (object) $b;`}
       </pre>
 
       {/* NULL CASTING */}
-      <h2 className="text-2xl font-semibold">Cast to NULL</h2>
-      <pre className="bg-gray-900 text-white p-4 rounded-lg">
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Cast to NULL</h2>
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`$a = 5;
 $b = 5.34;
 $c = "hello";

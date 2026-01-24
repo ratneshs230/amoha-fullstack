@@ -1,7 +1,7 @@
 export default function PhpMysqlConnectionTutorial() {
   return (
-    <div className="p-6 space-y-6 text-gray-800">
-      <h1 className="text-3xl font-bold">PHP: Connect to MySQL</h1>
+    <div className="p-6 space-y-6 text-gray-800 dark:text-gray-200">
+      <h1 className="text-3xl font-bold text-gray-900 dark:text-white">PHP: Connect to MySQL</h1>
 
       <p>
         PHP (version 5 and later) can work with MySQL databases using two main
@@ -13,7 +13,7 @@ export default function PhpMysqlConnectionTutorial() {
         <li>PDO (PHP Data Objects)</li>
       </ul>
 
-      <h2 className="text-2xl font-bold mt-6">MySQLi vs PDO</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">MySQLi vs PDO</h2>
 
       <p>Both MySQLi and PDO are powerful, but each has advantages:</p>
 
@@ -25,7 +25,7 @@ export default function PhpMysqlConnectionTutorial() {
         <li>Both support Prepared Statements (protection against SQL injection).</li>
       </ul>
 
-      <h2 className="text-2xl font-bold mt-6">MySQL Examples</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">MySQL Examples</h2>
       <p>This tutorial shows connection examples using:</p>
 
       <ul className="list-disc ml-6">
@@ -34,21 +34,21 @@ export default function PhpMysqlConnectionTutorial() {
         <li>PDO</li>
       </ul>
 
-      <h2 className="text-2xl font-bold mt-6">MySQLi Installation</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">MySQLi Installation</h2>
       <p>
         On Windows/Linux servers, MySQLi is automatically installed when the PHP
         MySQL package is installed.
       </p>
 
-      <h2 className="text-2xl font-bold mt-6">PDO Installation</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">PDO Installation</h2>
       <p>
         PDO is included in modern PHP versions but may require enabling in older
         versions.
       </p>
 
-      <h2 className="text-2xl font-bold mt-6">📌 Example 1 — MySQLi (Object-Oriented)</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">📌 Example 1 — MySQLi (Object-Oriented)</h2>
 
-      <pre className="bg-gray-900 text-green-300 p-4 rounded-lg text-sm overflow-auto">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<?php
 $servername = "localhost";
 $username = "username";
@@ -65,16 +65,16 @@ echo "Connected successfully";
 ?>`}
       </pre>
 
-      <h3 className="text-xl font-semibold">Older PHP Compatibility</h3>
-      <pre className="bg-gray-900 text-green-300 p-4 rounded-lg text-sm overflow-auto">
+      <h3 className="text-xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Older PHP Compatibility</h3>
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`if (mysqli_connect_error()) {
   die("Database connection failed: " . mysqli_connect_error());
 }`}
       </pre>
 
-      <h2 className="text-2xl font-bold mt-6">📌 Example 2 — MySQLi (Procedural)</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">📌 Example 2 — MySQLi (Procedural)</h2>
 
-      <pre className="bg-gray-900 text-green-300 p-4 rounded-lg text-sm overflow-auto">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<?php
 $servername = "localhost";
 $username = "username";
@@ -89,9 +89,9 @@ echo "Connected successfully";
 ?>`}
       </pre>
 
-      <h2 className="text-2xl font-bold mt-6">📌 Example 3 — PDO</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">📌 Example 3 — PDO</h2>
 
-      <pre className="bg-gray-900 text-green-300 p-4 rounded-lg text-sm overflow-auto">
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
 {`<?php
 $servername = "localhost";
 $username = "username";
@@ -112,7 +112,7 @@ try {
         provided, an exception will be thrown.
       </p>
 
-      <h2 className="text-2xl font-bold mt-6">Closing the Connection</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Closing the Connection</h2>
 
       <p>Connections close automatically, but can be closed manually:</p>
 

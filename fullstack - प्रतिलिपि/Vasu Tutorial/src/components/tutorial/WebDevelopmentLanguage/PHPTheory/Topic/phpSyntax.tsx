@@ -2,33 +2,33 @@ import React from "react";
 
 const PhpSyntax: React.FC = () => {
   return (
-    <div className="p-4 space-y-6">
-      <h1 className="text-3xl font-bold">PHP Syntax</h1>
+    <div className="p-6 leading-7 text-gray-800 dark:text-gray-200">
+      <h1 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">PHP Syntax</h1>
 
-      <p>
+      <p className="mt-2">
         A PHP script is executed on the server and the plain HTML result is sent back to the
         browser.
       </p>
 
-      <h2 className="text-2xl font-semibold">Basic PHP Syntax</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Basic PHP Syntax</h2>
 
-      <p>A PHP script starts with <code>&lt;?php</code> and ends with <code>?&gt;</code>:</p>
+      <p className="mt-2">A PHP script starts with <code className="bg-gray-200 dark:bg-gray-700 px-1 rounded">&lt;?php</code> and ends with <code className="bg-gray-200 dark:bg-gray-700 px-1 rounded">?&gt;</code>:</p>
 
-      <pre className="bg-gray-100 p-4 rounded-md overflow-auto">
-{`<?php
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
+        <code className="text-sm">{`<?php
 // PHP code goes here
-?>`}
+?>`}</code>
       </pre>
 
-      <p>The default file extension for PHP files is <strong>.php</strong>.</p>
+      <p className="mt-2">The default file extension for PHP files is <strong>.php</strong>.</p>
 
-      <p>
+      <p className="mt-2">
         A PHP file normally contains HTML tags along with PHP scripting code. Here is an example of
         a simple PHP file:
       </p>
 
-      <pre className="bg-gray-100 p-4 rounded-md overflow-auto">
-{`<!DOCTYPE html>
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
+        <code className="text-sm">{`<!DOCTYPE html>
 <html>
 <body>
 
@@ -39,25 +39,25 @@ echo "Hello World!";
 ?>
 
 </body>
-</html>`}
+</html>`}</code>
       </pre>
 
-      <p className="text-yellow-700 font-semibold">
-        Note: PHP statements end with a semicolon <code>;</code>.
+      <p className="text-yellow-700 dark:text-yellow-400 font-semibold mt-4">
+        Note: PHP statements end with a semicolon <code className="bg-gray-200 dark:bg-gray-700 px-1 rounded">;</code>.
       </p>
 
-      <h2 className="text-2xl font-semibold">PHP Case Sensitivity</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">PHP Case Sensitivity</h2>
 
-      <p>
-        In PHP, keywords such as <code>if</code>, <code>else</code>, <code>while</code>,{" "}
-        <code>echo</code>, functions, and user-defined functions are{" "}
+      <p className="mt-2">
+        In PHP, keywords such as <code className="bg-gray-200 dark:bg-gray-700 px-1 rounded">if</code>, <code className="bg-gray-200 dark:bg-gray-700 px-1 rounded">else</code>, <code className="bg-gray-200 dark:bg-gray-700 px-1 rounded">while</code>,{" "}
+        <code className="bg-gray-200 dark:bg-gray-700 px-1 rounded">echo</code>, functions, and user-defined functions are{" "}
         <strong>not case-sensitive</strong>.
       </p>
 
-      <p>All three echo statements below are valid and equal:</p>
+      <p className="mt-2">All three echo statements below are valid and equal:</p>
 
-      <pre className="bg-gray-100 p-4 rounded-md overflow-auto">
-{`<!DOCTYPE html>
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
+        <code className="text-sm">{`<!DOCTYPE html>
 <html>
 <body>
 
@@ -68,21 +68,21 @@ EcHo "Hello World!<br>";
 ?>
 
 </body>
-</html>`}
+</html>`}</code>
       </pre>
 
-      <p className="font-semibold">
-        ⚠️ However, <strong>variable names are case-sensitive</strong>.
+      <p className="font-semibold mt-4 text-gray-800 dark:text-gray-100">
+        However, <strong>variable names are case-sensitive</strong>.
       </p>
 
-      <p>
+      <p className="mt-2">
         In the example below, only the first statement displays the value because{" "}
-        <code>$color</code>, <code>$COLOR</code>, and <code>$coLOR</code> are treated as{" "}
+        <code className="bg-gray-200 dark:bg-gray-700 px-1 rounded">$color</code>, <code className="bg-gray-200 dark:bg-gray-700 px-1 rounded">$COLOR</code>, and <code className="bg-gray-200 dark:bg-gray-700 px-1 rounded">$coLOR</code> are treated as{" "}
         <strong>different variables</strong>:
       </p>
 
-      <pre className="bg-gray-100 p-4 rounded-md overflow-auto">
-{`<!DOCTYPE html>
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">
+        <code className="text-sm">{`<!DOCTYPE html>
 <html>
 <body>
 
@@ -94,7 +94,7 @@ echo "My boat is " . $coLOR . "<br>";
 ?>
 
 </body>
-</html>`}
+</html>`}</code>
       </pre>
     </div>
   );

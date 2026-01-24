@@ -2,8 +2,8 @@ import React from "react";
 
 const PHPNumbers: React.FC = () => {
   return (
-    <div className="p-6 leading-7">
-      <h1 className="text-3xl font-bold mb-4">PHP Numbers</h1>
+    <div className="p-6 leading-7 text-gray-800 dark:text-gray-200">
+      <h1 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">PHP Numbers</h1>
 
       <p>
         In this chapter we explore <strong>Integers</strong>,{" "}
@@ -11,7 +11,7 @@ const PHPNumbers: React.FC = () => {
         supports <strong>Infinity</strong> and <strong>NaN</strong>.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-6">Numeric Types in PHP</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Numeric Types in PHP</h2>
       <ul className="list-disc ml-6 mt-2">
         <li>Integer</li>
         <li>Float</li>
@@ -22,18 +22,18 @@ const PHPNumbers: React.FC = () => {
 
       <p className="mt-4">PHP creates numeric variables automatically:</p>
 
-      <pre className="bg-gray-200 p-3 rounded">{`$a = 5;
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">{`$a = 5;
 $b = 5.34;
 $c = "25";`}</pre>
 
       <p className="mt-2">Use var_dump() to check a variable’s type:</p>
 
-      <pre className="bg-gray-200 p-3 rounded">{`var_dump($a);
+      <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded mt-4 overflow-x-auto">{`var_dump($a);
 var_dump($b);
 var_dump($c);`}</pre>
 
       {/* Integers */}
-      <h2 className="text-2xl font-semibold mt-6">PHP Integers</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">PHP Integers</h2>
 
       <p>
         Use <code>is_int()</code> to check if a variable is an integer. Integers
@@ -70,7 +70,7 @@ var_dump(is_int($x));`}</pre>
       </ul>
 
       {/* Floats */}
-      <h2 className="text-2xl font-semibold mt-6">PHP Floats</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">PHP Floats</h2>
 
       <p>Use <code>is_float()</code> to check float types.</p>
 
@@ -91,7 +91,7 @@ var_dump(is_float($x));`}</pre>
       </ul>
 
       {/* Infinity */}
-      <h2 className="text-2xl font-semibold mt-6">PHP Infinity</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">PHP Infinity</h2>
 
       <p>
         Use <code>is_finite()</code> and <code>is_infinite()</code> to check if
@@ -102,7 +102,7 @@ var_dump(is_float($x));`}</pre>
 var_dump(is_infinite($x));`}</pre>
 
       {/* NaN */}
-      <h2 className="text-2xl font-semibold mt-6">PHP NaN</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">PHP NaN</h2>
 
       <p>
         NaN means “Not a Number.” Returned from invalid mathematical operations.
@@ -113,7 +113,7 @@ var_dump(is_infinite($x));`}</pre>
 var_dump($x);`}</pre>
 
       {/* Numerical Strings */}
-      <h2 className="text-2xl font-semibold mt-6">PHP Numerical Strings</h2>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">PHP Numerical Strings</h2>
 
       <p>
         <code>is_numeric()</code> returns true for numbers and numeric strings.
@@ -137,7 +137,7 @@ var_dump(is_numeric($x));`}</pre>
       </p>
 
       {/* Casting */}
-      <h2 className="text-2xl font-semibold mt-6">
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">
         PHP Casting Strings and Floats to Integers
       </h2>
 

@@ -2,11 +2,11 @@ import React from "react";
 
 const PhpFormHandling: React.FC = () => {
   return (
-    <div className="p-6">
+    <div className="p-6 leading-7 text-gray-800 dark:text-gray-200">
       {/* Title */}
-      <h2 className="text-2xl font-medium mb-4 border-b pb-2 border-blue-300 mt-10">
+      <h1 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">
         PHP Form Handling
-      </h2>
+      </h1>
 
       <p className="leading-relaxed mb-4">
         PHP forms ke through user input collect kiya ja sakta hai using two
@@ -14,7 +14,7 @@ const PhpFormHandling: React.FC = () => {
       </p>
 
       {/* Simple HTML Form */}
-      <h3 className="text-xl font-medium mb-3">PHP - A Simple HTML Form</h3>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">PHP - A Simple HTML Form</h2>
 
       <p className="leading-relaxed mb-4">
         Yeh example ek simple HTML form show karta hai jisme name aur email
@@ -43,7 +43,7 @@ const PhpFormHandling: React.FC = () => {
       </p>
 
       {/* welcome.php */}
-      <h3 className="text-xl font-medium mb-3">welcome.php Example</h3>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">welcome.php Example</h2>
 
       <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded shadow-inner text-sm mb-6">
         <pre className="font-mono text-black dark:text-gray-200">
@@ -59,7 +59,7 @@ Your email address is: <?php echo $_POST["email"]; ?>
       </div>
 
       {/* GET Example */}
-      <h3 className="text-xl font-medium mb-3">Same Example Using GET</h3>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">Same Example Using GET</h2>
 
       <p className="leading-relaxed mb-4">
         Yahi example GET method ke saath:
@@ -75,7 +75,7 @@ Your email address is: <?php echo $_POST["email"]; ?>
         </pre>
       </div>
 
-      <h3 className="text-xl font-medium mb-3">welcome_get.php</h3>
+      <h3 className="text-xl font-semibold mt-6 text-gray-800 dark:text-gray-100">welcome_get.php</h3>
 
       <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded shadow-inner text-sm mb-6">
         <pre className="font-mono text-black dark:text-gray-200">
@@ -97,7 +97,7 @@ Your email address is: <?php echo $_GET["email"]; ?>
       </p>
 
       {/* GET vs POST */}
-      <h3 className="text-xl font-medium mb-3">GET vs POST</h3>
+      <h2 className="text-2xl font-semibold mt-6 text-gray-800 dark:text-gray-100">GET vs POST</h2>
 
       <p className="leading-relaxed mb-4">
         GET aur POST dono associative arrays create karte hain jaha keys input
@@ -114,7 +114,7 @@ Your email address is: <?php echo $_GET["email"]; ?>
       </ul>
 
       {/* When to use GET */}
-      <h3 className="text-xl font-medium mb-3">When to use GET?</h3>
+      <h3 className="text-xl font-semibold mt-6 text-gray-800 dark:text-gray-100">When to use GET?</h3>
       <ul className="list-disc list-inside space-y-2 ml-4 mb-4">
         <li>Data URL me visible hota hai</li>
         <li>Bookmark ho sakta hai</li>
@@ -123,7 +123,7 @@ Your email address is: <?php echo $_GET["email"]; ?>
       </ul>
 
       {/* When to use POST */}
-      <h3 className="text-xl font-medium mb-3">When to use POST?</h3>
+      <h3 className="text-xl font-semibold mt-6 text-gray-800 dark:text-gray-100">When to use POST?</h3>
       <ul className="list-disc list-inside space-y-2 ml-4 mb-4">
         <li>Data URL me visible nahi hota</li>
         <li>No size limit</li>
