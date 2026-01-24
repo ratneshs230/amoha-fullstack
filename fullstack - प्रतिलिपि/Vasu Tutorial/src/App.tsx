@@ -154,6 +154,10 @@ import GDScriptTutorial from "./components/tutorial/GameDevelopment/GDScriptTuto
 // PHP Tutorial
 import PhpTutorial from "./components/tutorial/WebDevelopmentLanguage/PHPTheory/Php.tsx";
 
+// HTML and CSS Tutorials
+import HtmlTutorial from "./components/tutorial/WebDevelopmentLanguage/HTMLTheory/Html.tsx";
+import CssTutorial from "./components/tutorial/WebDevelopmentLanguage/CSSTheory/Css.tsx";
+
 // Profile Page (for backend connectivity)
 import Profile from "./components/MainPageComponents/Profile.tsx";
 
@@ -325,6 +329,8 @@ const App: React.FC = () => {
         <Route path="/AspNetTutorial/*" element={<AspNetTutorial darkMode={darkMode} />} />
         <Route path="/ColdFusionTutorial/*" element={<ColdFusionTutorial darkMode={darkMode} />} />
         <Route path="/Php/*" element={<PhpTutorial darkMode={darkMode} />} />
+        <Route path="/Html/*" element={<HtmlTutorial darkMode={darkMode} />} />
+        <Route path="/CSS/*" element={<CssTutorial darkMode={darkMode} />} />
 
         {/* Game Development */}
         <Route path="/GDScriptTutorial/*" element={<GDScriptTutorial darkMode={darkMode} />} />
